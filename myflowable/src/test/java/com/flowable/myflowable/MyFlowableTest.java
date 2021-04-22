@@ -65,15 +65,19 @@ public class MyFlowableTest {
 //		processEngine.getRuntimeService().addEventListener(new MyMutilInstanceTask(),
 //				FlowableEngineEventType.MULTI_INSTANCE_ACTIVITY_STARTED,FlowableEngineEventType.MULTI_INSTANCE_ACTIVITY_COMPLETED,
 //				FlowableEngineEventType.MULTI_INSTANCE_ACTIVITY_COMPLETED_WITH_CONDITION);
-		processEngine.getRuntimeService().addEventListener(new GlobalTaskAssignmentListener(),
-				FlowableEngineEventType.ACTIVITY_CANCELLED,FlowableEngineEventType.ACTIVITY_COMPLETED,
-				FlowableEngineEventType.PROCESS_CANCELLED,FlowableEngineEventType.PROCESS_COMPLETED,
-				FlowableEngineEventType.PROCESS_CREATED,FlowableEngineEventType.PROCESS_STARTED,FlowableEngineEventType.TASK_ASSIGNED,
-				FlowableEngineEventType.TASK_COMPLETED,FlowableEngineEventType.TASK_CREATED);
+//		processEngine.getRuntimeService().addEventListener(new GlobalTaskAssignmentListener(),
+//				FlowableEngineEventType.ACTIVITY_CANCELLED,FlowableEngineEventType.ACTIVITY_COMPLETED,
+//				FlowableEngineEventType.PROCESS_CANCELLED,FlowableEngineEventType.PROCESS_COMPLETED,
+//				FlowableEngineEventType.PROCESS_CREATED,FlowableEngineEventType.PROCESS_STARTED,FlowableEngineEventType.TASK_ASSIGNED,
+//				FlowableEngineEventType.TASK_COMPLETED,FlowableEngineEventType.TASK_CREATED);
 //		String processDefinitionId = "thirdmodelkey:1:6e0c7a6d-9c6a-11eb-aabe-dc1ba1f6992f";
-		String processDefinitionId = "thirdmodelkey-0420:1:76582b9f-a1be-11eb-b884-dc1ba1f6992f";
+//		String processDefinitionId = "thirdmodelkey-0420:1:76582b9f-a1be-11eb-b884-dc1ba1f6992f";
+//		String processDefinitionId = "exclusiveTest:1:4c38d33d-a2a8-11eb-b026-dc1ba1f6992f";
+//		String processDefinitionId = "kkkkkpppp:1:095cd1a9-a2aa-11eb-b026-dc1ba1f6992f";
+//		String processDefinitionId = "kkkkkpppp:2:7dab4b52-a2aa-11eb-b026-dc1ba1f6992f";
+		String processDefinitionId = "kkkkkpppp:3:df05eeab-a2aa-11eb-b026-dc1ba1f6992f";
 		Map<String,Object> variables = new HashMap<String,Object>();
-		variables.put("leader", "gaoqiang");
+		variables.put("aaa", 9);
 //		variables.put("manager", "gaoqiang");
 //		variables.put("manager", "gaoqiang");
 		ProcessInstance proInstance = processEngine.getRuntimeService().startProcessInstanceById(processDefinitionId,variables);
@@ -90,11 +94,34 @@ public class MyFlowableTest {
 		}
 		System.out.println("即将审批任务");
 		System.out.println("完成了审批任务");
-		Task task2 = processEngine.getTaskService().createTaskQuery().processInstanceId(proInstance.getId()).singleResult();
-		String assignee2 = task2.getAssignee();
-		System.out.println(assignee2);
-		processEngine.getTaskService().complete(task2.getId());
-		System.out.println("完成了审批任务");
+		List<Task> task2 = processEngine.getTaskService().createTaskQuery().processInstanceId(proInstance.getId()).list();
+for (Task task : task2) {
+			
+			String assignee = task.getAssignee();
+			System.out.println(assignee);
+			processEngine.getTaskService().complete(task.getId());
+		}
+//		String assignee2 = task2.getAssignee();
+//		System.out.println(assignee2);
+//		processEngine.getTaskService().complete(task2.getId());
+//		System.out.println("完成了审批任务");
+List<Task> task3 = processEngine.getTaskService().createTaskQuery().processInstanceId(proInstance.getId()).list();
+for (Task task : task3) {
+			
+			String assignee = task.getAssignee();
+			System.out.println(assignee);
+			processEngine.getTaskService().complete(task.getId());
+		}
+
+List<Task> task4 = processEngine.getTaskService().createTaskQuery().processInstanceId(proInstance.getId()).list();
+for (Task task : task4) {
+			
+			String assignee = task.getAssignee();
+			System.out.println(assignee);
+			processEngine.getTaskService().complete(task.getId());
+		}
+
+
 	}
 	
 	

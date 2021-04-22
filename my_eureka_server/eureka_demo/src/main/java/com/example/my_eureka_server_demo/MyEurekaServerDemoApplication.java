@@ -10,6 +10,7 @@ public class MyEurekaServerDemoApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(MyEurekaServerDemoApplication.class, args);
+        System.out.println("eureka server 启动完成");
     }
 
 }

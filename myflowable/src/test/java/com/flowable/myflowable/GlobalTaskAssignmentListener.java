@@ -77,12 +77,14 @@ public class GlobalTaskAssignmentListener extends AbstractFlowableEngineEventLis
 	protected void processCompletedWithTerminateEnd(FlowableEngineEntityEvent event) {
 		// TODO Auto-generated method stub
 		super.processCompletedWithTerminateEnd(event);
+		System.out.println("processCompletedWithTerminateEnd");
 	}
 
 	@Override
 	protected void processCompletedWithErrorEnd(FlowableEngineEntityEvent event) {
 		// TODO Auto-generated method stub
 		super.processCompletedWithErrorEnd(event);
+		System.out.println("processCompletedWithErrorEnd");
 	}
 
 	
