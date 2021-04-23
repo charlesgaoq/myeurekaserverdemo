@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02fb742b-bf3d-470a-984c-b8d6d8da8006" name="Default Changelist" comment="我的注册中心 demo 程序 用于调试eureka server 工作原理">
+    <list default="true" id="02fb742b-bf3d-470a-984c-b8d6d8da8006" name="Default Changelist" comment="修改后提交">
+      <change afterPath="$PROJECT_DIR$/eureka_demo/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka_demo/study.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../myflowable/src/test/java/com/flowable/myflowable/GlobalTaskAssignmentListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myflowable/src/test/java/com/flowable/myflowable/GlobalTaskAssignmentListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../myflowable/src/test/java/com/flowable/myflowable/MyFlowableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myflowable/src/test/java/com/flowable/myflowable/MyFlowableTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,21 +66,19 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.39910313" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RunManager" selected="Spring Boot.MyEurekaServerDemoApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -130,7 +128,8 @@
       <option name="presentableId" value="Default" />
       <updated>1618924091482</updated>
       <workItem from="1618924094563" duration="6711000" />
-      <workItem from="1618985149665" duration="11604000" />
+      <workItem from="1618985149665" duration="36908000" />
+      <workItem from="1619164190952" duration="708000" />
     </task>
     <task id="LOCAL-00001" summary="我的注册中心 demo 程序 用于调试eureka server 工作原理">
       <created>1618971824358</created>
@@ -139,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618971824358</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="修改后提交">
+      <created>1619073326597</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1619073326597</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +165,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="我的注册中心 demo 程序 用于调试eureka server 工作原理" />
-    <option name="LAST_COMMIT_MESSAGE" value="我的注册中心 demo 程序 用于调试eureka server 工作原理" />
+    <MESSAGE value="修改后提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改后提交" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -318,6 +325,76 @@
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-netflix-eureka-server/3.0.2/spring-cloud-netflix-eureka-server-3.0.2-sources.jar!/org/springframework/cloud/netflix/eureka/server/EurekaServerAutoConfiguration.java</url>
           <line>230</line>
           <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/netflix/eureka/eureka-core/1.10.11/eureka-core-1.10.11-sources.jar!/com/netflix/eureka/registry/PeerAwareInstanceRegistryImpl.java</url>
+          <line>221</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-netflix-eureka-server/3.0.2/spring-cloud-netflix-eureka-server-3.0.2-sources.jar!/org/springframework/cloud/netflix/eureka/server/EurekaServerBootstrap.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/netflix/eureka/eureka-core/1.10.11/eureka-core-1.10.11-sources.jar!/com/netflix/eureka/registry/PeerAwareInstanceRegistryImpl.java</url>
+          <line>212</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/netflix/eureka/eureka-core/1.10.11/eureka-core-1.10.11-sources.jar!/com/netflix/eureka/registry/AbstractInstanceRegistry.java</url>
+          <line>193</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/netflix/eureka/eureka-core/1.10.11/eureka-core-1.10.11-sources.jar!/com/netflix/eureka/registry/PeerAwareInstanceRegistryImpl.java</url>
+          <line>235</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.3.6/spring-context-5.3.6.jar!/org/springframework/context/support/AbstractApplicationContext.class</url>
+          <line>188</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.3.6/spring-context-5.3.6.jar!/org/springframework/context/support/AbstractApplicationContext.class</url>
+          <line>205</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.3.6/spring-context-5.3.6.jar!/org/springframework/context/event/SimpleApplicationEventMulticaster.class</url>
+          <line>57</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.3.6/spring-context-5.3.6.jar!/org/springframework/context/event/SimpleApplicationEventMulticaster.class</url>
+          <line>79</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.3.6/spring-context-5.3.6.jar!/org/springframework/context/event/SimpleApplicationEventMulticaster.class</url>
+          <line>94</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-devtools/2.4.5/spring-boot-devtools-2.4.5.jar!/org/springframework/boot/devtools/restart/RestartApplicationListener.class</url>
+          <line>27</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.3.6/spring-context-5.3.6.jar!/org/springframework/context/event/SimpleApplicationEventMulticaster.class</url>
+          <line>87</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.4.5/spring-boot-2.4.5.jar!/org/springframework/boot/context/config/DelegatingApplicationListener.class</url>
+          <line>33</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/netflix/eureka/eureka-client/1.10.11/eureka-client-1.10.11-sources.jar!/com/netflix/discovery/DiscoveryClient.java</url>
+          <line>892</line>
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-netflix-eureka-server/3.0.2/spring-cloud-netflix-eureka-server-3.0.2-sources.jar!/org/springframework/cloud/netflix/eureka/server/EurekaServerAutoConfiguration.java</url>
